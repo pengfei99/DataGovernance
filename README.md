@@ -40,4 +40,14 @@ Below figures shows a graphical presentation of the above definitions
 
 ![introduction_of_data_governance_terms](https://raw.githubusercontent.com/pengfei99/DataGovernance/main/img/introduction_of_data_governance_terms.png)
 
-##
+### 2.1 Data principals definition and implementation
+
+### 2.2 Data quality definition and implementation
+
+[Data quality](https://github.com/pengfei99/DataGovernance/blob/main/docs/data_quality.md)
+
+### 2.3 Metadata management definition and implementation
+
+### 2.4 Data security definition and implementation
+
+### 2.5 Data life cycle definition and implementation
