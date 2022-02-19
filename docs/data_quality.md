@@ -152,6 +152,32 @@ The data and buiness requirements evoles every day, so the data quality manageme
 
 As a result data quality control is not a one-time effort, rather a non-stop process. **You need to regularly review data quality policies and rules with the intent to continuously improve them**.
 
+
+## 4. Best practices of data quality management
+
+Below are some best practices that can help you improve the quality of your data.
+
+### 4.1 Integrate data quality management
+
+Integrating data quality management into data processeing pipeline is hard and time consuming. It requires multiple serious steps:
+
+- Base on enterprise data governenance strategy and business requirements, desgin appropriate data quality stragegy (what need to be done, who will do it, etc.).
+- Define roles (e.g. rights, accountability, kpi, rewards, etc) for everyone who works with data .
+- Setting up a data quality management Standard operation procedure (check section 3).
+- Make data quality visible (e.g. report, dashboard, etc.)
+
+### 4.2 Automat as much as possible
+
+Poor data quality is often introduced by human error. For example manual data entries (by employees, by customers or even by multiple users) is one of the principal reason. 
+Managing thousands of data quality control (validation) rules is quite hard too. If a process can be automated, implement it.
+
+### 4.3 Preventing issues, not just fixing them
+
+We often say "Garbage in, Garbge out". So instead of taking time to clean data, you can set up rules to prevent low quality data enters your data platform. For example, you can create null value detection or duplicate detection rules. This rule can help you detect anomalies inside a dataset before it enters your data platform.
+
+### 4.4 Taking care of both master and metadata
+
+Nursing your master data is extremely important, but you shouldn’t forget about your metadata either. For example, without time stamps that metadata reveals, companies won’t be able to control data versions. As a result, they could extract obsolete values for their reports, instead of updated ones.
 Note:
 A data schema is simply a type of data structure. A data structure is a representation of the arrangement, relationships, and contents of data  in an organization’s data resource
 https://www.scnsoft.com/blog/guide-to-data-quality-management
