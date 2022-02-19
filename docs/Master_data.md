@@ -1,4 +1,14 @@
-# Master Data Management 
+# Master Data
+
+Master data is the core, **non-transactional data** used across your enterprise, including customers, products, supplier locations and chart of accounts.
+
+Let’s start with an example. If you look at a standard table of data — say, from your ERP, for example — you can see the transactional data like the order date, number, quantity and sub-total. These values are typically unique and accumulate quickly — your retail store may process thousands of order per day, for example.
+
+But you’ll also see data that are constant across your organization. For example, the currency code (e.g USD, RMB), the product unit price, the custom id, etc. Master data can be any type of data as long as an organization agrees to a single definition.
+
+**Master data is an important class of data as it represents an opportunity to manage and govern data as a single source of reference.**
+
+## Master Data Management 
 
 What is Master Data Management
 Master data management (MDM) is a method of linking all the important and critical data to a common point of reference, improving the quality of the data to a great extent. Moreover, it is possible to apply it to any computing architecture, platform or application. Usually, master data management is useful for large enterprises than small to medium scale organizations.
