@@ -17,7 +17,7 @@ An organization has multiple departments; it is useful to link them all to a sin
 
 # Metadata management
 
-What is Metadata Management 
+What is Metadata Management ?
 Metadata management is the process of handling data that describes other data. Also, it involves tasks such as establishing policies, processes to ensure data integration, accessing, sharing, linking, analyzing and maintaining. Generally, metadata can be generated when creating, acquiring, adding, deleting or updating data. For example, assume Microsoft Word application. It provides documents metadata such as file size, date of creating the document and data of modifications.
 
 Metadata management helps to find a particular data asset. It includes creating a metadata repository, adding data to that repository and using that data. Moreover, it minimizes the redundancy of effort and improves data consistency. Also, this allows using data as required. Furthermore, it is not compulsory to maintain the information under one specific employee.
