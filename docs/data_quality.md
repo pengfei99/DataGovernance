@@ -177,7 +177,10 @@ We often say "Garbage in, Garbge out". So instead of taking time to clean data, 
 
 ### 4.4 Taking care of both master and metadata
 
-Nursing your master data is extremely important, but you shouldn’t forget about your metadata either. For example, without time stamps that metadata reveals, companies won’t be able to control data versions. As a result, they could extract obsolete values for their reports, instead of updated ones.
+Master data can help you to build a common reference (e.g. standard currency code, product catalog, etc) that every can rely on. This can reduce term or format mismatch, thus improves orderliness of data. 
+
+Metadata can help you identify and find data and its properties easily. For example, data time stamp can help you etablish data versions, thus improves timeliness of data. Data lineage can help you identify the upstream and downstream of a dataset. It can help you to improve integrity and consistency.  
+
+
 Note:
 A data schema is simply a type of data structure. A data structure is a representation of the arrangement, relationships, and contents of data  in an organization’s data resource
-https://www.scnsoft.com/blog/guide-to-data-quality-management
