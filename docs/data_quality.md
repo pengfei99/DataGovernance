@@ -107,17 +107,50 @@ With the above defined thresholds, we can decalre following rules :
 
 - Customer address must not be N/A (to check completeness).
 - Customer address must include a zip code and country/state name (to check orderliness).
-- Customer's confirmation for receiving letters (to check accuracy)
+- Customer's letters have been returned (to check accuracy)
 - Customer email must consist @ (to check orderliness).
 - Only first letters in customer name, middle name (if any) and surname must be capitalized (to check orderliness).
 - Date of birth must be a valid date that falls into the interval from 01/01/1900 to 01/01/2010.
 
 Accuracy thresholds = confirmation/customer * 100%
 
-### 3.2 Assess the quality of data
-### 3.3 Resolve data quality issues
-### 3.4 Monitor and control data quality continuously
+### 3.3 Assess the quality of data
 
+In this step, we test the data by using the data quality measurement rules that we defined in the previous step. 
+
+For example, suppose we have 100 rows in the data set.
+- for rule 1, we detect there is no rows that contains null value on column `address`. Note almost all data manipulation framework can detect null values. for example, in spark we can create a new column to indicate it's null or not (df.withColumn("type_is_null", df.type.isNull())), then we count the number of null rows. This means column **address has 100 as completeness score** 
+- for rule2, we detect there are 26 rows that does not has zip code, country, or state name. This means column **address has 74 as orderliness score**
+- for rule3, we detect 16 letters that the company send to customer have been returned, means 16 rows have bad address. This means **address has 84 as accuracy score**. Note this may also tells us the **Timeliness** of the data if we compare the result with previous letter return status. For example, if previous return letter number is 10. It means the 6 new return letter is due to address update of the customer.   
+
+You can notice, to test the above rules, for some of them we can use data analytics to achieve them (e.g. check if email address fit certain formats, has null value or not). But for some of them, we need to contact customer to achieve it (such as sending letter to verify address.). That's why data validation is a sub domain of data quality control. Because it can not answer all the questions. 
+
+After applying all rules, you will have scores for all the properties that we want to ensure. For example, for column 
+
+address:
+- Accuraccy: 84 (below thresholds)
+- Completenes: 100 (Above)
+- Orderliness: 74 (below). Orderliness is worst than accuracy, because even the bad address format can be read by a humain, then delived successfully to the customer.
+- Timeliness: 94 (Above)
+- ETc.
+
+Now we have the metric of data quality, we need to handle the data quality issues
+
+### 3.4 Resolve data quality issues
+
+At this stage, we need to identify the root cause of the data quality issues, and find the most efficient way to eliminate them. 
+
+For example, for orderliness of the customer address, because the address is entered manually by different employee, and everyone has their own way to write an address. 
+
+Short term solution: we need to ask data engineer to clean the column by converting all address to one signle standard format.
+Long term solution: we need to introduce clear standards for customer address manual data entries, as well as data quality-related key performance indicators for the employees responsible for keying data into the database. We can also set a validation rule in the system that will not accept an address unless it complies with the format or range.
+
+
+### 3.5 Monitor and control data quality continuously
+
+The data and buiness requirements evoles every day, so the data quality management system needs to evole to adapt new changes. For example, one day your company may want to do user profiling, so your custom table will have new columns that describe the custom demographic and hobbies. You need to add new data quality thresholds and rules to make sure the new columns also satisfait your data quality requirements.
+
+As a result data quality control is not a one-time effort, rather a non-stop process. **You need to regularly review data quality policies and rules with the intent to continuously improve them**.
 
 Note:
 A data schema is simply a type of data structure. A data structure is a representation of the arrangement, relationships, and contents of data  in an organization’s data resource
