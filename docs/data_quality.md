@@ -67,7 +67,7 @@ actual value in reality, with respect to its intended use.
 - Bad example: We have multiple duplicated records for the user’s name, address, and birthdate.
 - Measurement Metric: Number of duplicated data and how many times the data has been duplicated.
 
-## 2. Common data quality metric
+## 2 Common data quality metric
 - The ratio of data to errors: monitors the number of known data errors compared to the entire data set. 
   
 - The number of empty values: counts the times you have an empty field within a data set.
@@ -80,7 +80,40 @@ actual value in reality, with respect to its intended use.
 
 ## 3. Data quality management: process stages described
    
-### 3.1 Define data quality thresholds and rules
+### 3.1 Define data quality thresholds
+The goal of ensuring data quality for a enterprise is to use these data to make good decisions. And these decisions will help the enterprise to reduce expance or make more money on certain products or service. So we can consider data quality controls as a investment, and the money we make via these data as a income. If income is greater than investment then it's a good business. 
+
+More often a company does not need 100% perfect data quality (e.g. 100% consistent, 100 complete, etc.), because it will cost too much to achive that, and the gain is not that significant. As a result, the job of a data quality manager is to identify the perfect data quality thresholds that make data good enough to make decisions and cost less. And the quality thresholds may be different for different apartement due to the different usage of the data.
+
+For example, you have a table customers which contains colums such as: 
+- full_name
+- date_of_birth
+- sex
+- address
+- phone_num
+- email
+
+For the marketing team the **Accuracccy,Completeness,Timeliness** of full_name, address, phone, email must be up to 95%, because these information are essential to reach the customer. The **Orderliness,  Uniqueness** of address, phone, email must be up to 75%. Because even the address format is not standard or unique, the customer can still receive the mails.
+
+For the `date_of_birth` column, which is less important, we can ignore the **Accuracccy,Completeness,Timeliness**. All we need to ensure is that the format of date is valide (comply with the orderliness attribute)
+
+So you can notice, the granularity of a data quality control can go down to the columns of a table, for each column you can have a specific thresholds. You can setup coefficiant for each column to calculate the overall thresholds of the table, then of the whole dataset.
+
+### 3.2  Define data quality measurement rules
+
+Now, let's talk how to measure if the data meets these thresholds or not? For that, you should set data quality measurement rules. Note `data quality measurement rules is very similar to data validation rules, because data validation is a sub domain of data quality measurement`. 
+
+With the above defined thresholds, we can decalre following rules :
+
+- Customer address must not be N/A (to check completeness).
+- Customer address must include a zip code and country/state name (to check orderliness).
+- Customer's confirmation for receiving letters (to check accuracy)
+- Customer email must consist @ (to check orderliness).
+- Only first letters in customer name, middle name (if any) and surname must be capitalized (to check orderliness).
+- Date of birth must be a valid date that falls into the interval from 01/01/1900 to 01/01/2010.
+
+Accuracy thresholds = confirmation/customer * 100%
+
 ### 3.2 Assess the quality of data
 ### 3.3 Resolve data quality issues
 ### 3.4 Monitor and control data quality continuously
