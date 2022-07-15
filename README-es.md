@@ -46,7 +46,7 @@ Las siguientes figuras muestran una presentación gráfica de las definiciones a
 
 ### 2.2 Definición e implementación de la calidad de los datos
 
-[Calidad de los datos](https://github.com/pengfei99/DataGovernance/blob/main/docs/data_quality.md)
+[Calidad de los datos](https://github.com/johnfelipe/DataGovernance/blob/main/docs/data_quality-es.md)
 
 ### 2.3 Definición e implementación de la gestión de metadatos
 
