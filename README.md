@@ -22,7 +22,107 @@ governs data throughout their entire life-cycle. It defines mainly three things:
 
 **Data management is an entire suite of practices, processes,  systems and tools which implement the data governance definitions**. 
 
-### 1.1 Goals and benefits
+### 1.1 Benefits
+As we mentioned before, the objective of data governance is to ensure the availability, usability, integrity and 
+security of the data. A well-designed data governance system can provide below benefits:
+
+- data harmonization
+- data quality guarantee
+- data security guarantee
+- data efficiency 
+
+
+#### 1.1.1 Data harmonization
+
+In general, an organization contains many `data silos`, which is commonly built when individual business units 
+deploy separate transaction processing systems without centralized data governance. These data silos makes data hard to
+be reused due to different standard (e.g. schema, vocabulary, measurement units, etc.). 
+
+Data governance can harmonize the data in those systems by defining a centralized standard and a collaborative process, 
+with stakeholders from the various business units participating. And these standard and process will break down all data
+silos inside the organization, thus improve the **availability** and **usability** of the data.
+
+#### 1.1.2 Data quality guarantee
+
+Data governance also defines the quality standard and treatment process of all incoming data, if the quality does not
+meet the quality requirement, the data treatment process need to be applied to the data until the data quality meets
+the requirement. 
+
+#### 1.1.3 Data security guarantee
+
+Data governance defines uniform data security policies on who can use the data, and how the data can be used (e.g. extraction, 
+modification, deletion, etc.). It also defines who can modify the data security policies, along with procedures to 
+monitor all policy modification, usage and enforcement. 
+
+This can give you a guarantee of your data security and the compliance with data security regulatory laws. 
+
+#### 1.1.4 Data efficiency
+
+All above benefits can lower the costs of data usage when data scientists, analysts and business users want to access 
+needed data. And the decision made based on the data are more accurate. 
+
+Ideally, that will lead to competitive advantages and increased revenue and profits of the organization.
+
+### 1.2 Who's responsible for data governance?
+
+Below are the key participants and their primary governance responsibilities.
+
+#### 1.2.1 Chief data officer. 
+
+The chief data officer (CDO): if there is one -- is often the senior executive who oversees a data governance 
+program and has high-level responsibility for its success or failure. The CDO's role includes securing approval, 
+funding and staffing for the program; playing a lead role in setting it up; monitoring its progress; and acting as 
+an advocate for it internally. If an organization doesn't have a CDO, another C-suite executive will usually serve 
+as an executive sponsor and handle the same functions.
+
+#### 1.2.2 Data governance manager and team. 
+In some cases, the CDO or an equivalent executive -- the director of enterprise data management, for example -- 
+may also be the hands-on data governance program manager. In others, organizations appoint a data governance manager 
+or lead specifically to run the program. Either way, the program manager typically heads a data governance team that 
+works on the program full time. Sometimes more formally known as the data governance office, it coordinates the 
+process, leads meetings and training sessions, tracks metrics, manages internal communications and carries out 
+other management tasks.
+
+#### 1.2.3 Data governance committee. 
+
+The governance team usually doesn't make policy or standards decisions, though. That's the responsibility of the data 
+governance committee or council, which is primarily made up of business executives and other data owners. 
+The committee approves the foundational **data governance policy** and associated policies and rules on things like data 
+access and usage, plus the procedures for implementing them. It also resolves disputes, such as disagreements between 
+different business units over data definitions and formats.
+
+##### What is a data governance policy?
+A data governance policy is a documented set of guidelines for ensuring that an organization's data and information 
+assets are managed consistently and used properly. Such guidelines typically include individual policies for data 
+quality, access, security, privacy and usage, and they specify different roles and responsibilities for implementing 
+those policies and monitoring compliance with them.
+
+A well-crafted policy is the foundation of an organization's data governance program. The data governance policy 
+should articulate the principles, practices and standards that senior business and IT leaders have determined are 
+necessary to ensure that the organization has high-quality data and that its data assets are protected against both 
+internal misuse and external threats.
+
+Ideally, the policy-forming group, called a data governance committee or data governance council, is primarily made 
+up of business executives and other data owners. The policy document this group creates, in a process coordinated by 
+data governance managers, clearly defines the organization's data governance structure and a set of governance rules 
+and procedures for the executive team, business managers, data analysts and operational workers to follow.
+
+For example, a data governance policy formally outlines how data processing and data management should be carried 
+out to make sure that data is accurate, consistent and accessible throughout an organization's systems. The policy 
+also establishes who is responsible for data under various circumstances. In addition, it can incorporate 
+risk management and data ethics principles to reduce potential business problems from the improper use of data.
+
+#### 1.2.4 Data stewards. 
+The responsibilities of data stewards include overseeing data sets to keep them in order. They're also in charge of 
+ensuring that the policies and rules approved by the data governance committee are implemented and that end users 
+comply with them. Workers with knowledge of particular data assets and domains are generally appointed to handle the 
+data stewardship role. That's a full-time job in some companies and a part-time position in others. 
+There can also be a mix of IT and business data stewards.
+
+#### 1.2.5 Other data professionals
+Data architects, data modelers and data quality analysts and engineers are usually part of the governance process, too.
+They work with the governance team to setup standards and quality metrics, etc.
+
 
 ## 2. The five decision domain for data governance
 
