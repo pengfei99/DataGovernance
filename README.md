@@ -124,6 +124,27 @@ Data architects, data modelers and data quality analysts and engineers are usual
 They work with the governance team to setup standards and quality metrics, etc.
 
 
+### 1.3 Data governance framework
+
+A data governance framework should help us to define all aspects of managing a data governance program and its workflow 
+- objectives of the data governance program
+- mission statement for the program 
+- how its success will be measured (e.g. rules and metrics)
+- decision-making responsibilities 
+- decision-making accountability///////////////
+- collaboration between different roles
+- development of governance policies
+- documentation of the process 
+- organizational structures 
+- the creation of `data management tool` (e.g. data catalog, quality control, etc.)
+
+An organization's governance framework should be documented and shared internally, so everyone who is involved 
+understand how the data governance program will work.
+
+On the technology side, a data governance tool can be used, but not mandatory. The objective of such tool is to 
+facilitate and automate all the aspects of managing a governance program which we have mentioned above
+
+
 ## 2. The five decision domain for data governance
 
 In previous section, we have said we need to make decisions to ensure effective management of data. In general, we have
