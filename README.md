@@ -128,14 +128,14 @@ They work with the governance team to setup standards and quality metrics, etc.
 
 A data governance framework should help us to define all aspects of managing a data governance program and its workflow 
 - objectives of the data governance program
-- mission statement for the program 
+- mission statement for the governance program 
 - how its success will be measured (e.g. rules and metrics)
-- decision-making responsibilities 
-- decision-making accountability///////////////
-- collaboration between different roles
+- data professional roles(e.g. CDO, data owner, etc.),what decision they can make, decision-making responsibilities, 
+   and decision-making accountability
+- organizational structures and collaboration between different roles
+- data lifecycle
 - development of governance policies
-- documentation of the process 
-- organizational structures 
+- documentation of the process
 - the creation of `data management tool` (e.g. data catalog, quality control, etc.)
 
 An organization's governance framework should be documented and shared internally, so everyone who is involved 
@@ -144,6 +144,8 @@ understand how the data governance program will work.
 On the technology side, a data governance tool can be used, but not mandatory. The objective of such tool is to 
 facilitate and automate all the aspects of managing a governance program which we have mentioned above
 
+Note the data governance is a continuous effort, and the governance policies should be review regularly to meet 
+the requirement of new emerging data asset.
 
 ## 2. The five decision domain for data governance
 
@@ -183,12 +185,90 @@ Below figures shows a graphical presentation of the above definitions
 
 ## 3. Difference between data governance and data management
 
-The main difference between the terms `data governance` and `data management` is that `data governance` refers to 
-the policies and decisions that must be made and who can make these decisions.
+People often confuse about the terms `data governance` and `data management`, and don't know the difference between them.
+- **data governance**: refers to the process of making policies and decisions, and who can make these decisions of how the
+data should be governed. 
 
-Data management refers to the implementation of the policies and decisions. For more information, you can read below
-papers:
+- **data management**: refers to the implementation of the policies and decisions made by the data governance. 
+
+For more information, you can read below papers:
 1. Fu, Wojak, Neagu, Ridley, & Travis, `Data governance in predictive toxicology`
 2. Khatri & Brown, `Designing data governance`. 
 
-## 4. 
+## 4. Data governance program execution
+
+In general, we should follow below steps when we run a data governance program.
+1. identifying the data assets (e.g. origin, type, format, etc.) and all the people who are working with these data 
+   assets(e.g. data owners who produce the data, data stewards who clean and transform, data consumers who use data to produce
+   report, stats, etc.).
+2. Gathering requirements of the identified data assets by discussing with all the data professionals. 
+3. Defining the objectives of the data governance program based on requirements and budget.
+4. Defining the mission statement for the governance program 
+5. Defining the rules and metrics on how to measure the success of each mission
+6. Defining different roles of the data professionals (e.g. CDO, data owner, data steward, etc.) and their 
+   decision-making responsibilities/accountability
+7. Defining the organizational structures of these roles and how different roles should collaborate between them
+8. Defining data life-cycle(e.g. data collection, data cleaning, data cataloging, data publication, data archiving) and
+   which roles are involved in each step.
+9. Development of governance policies and measurement metrics (e.g. metadata management, data quality, data security, etc.)
+10. Documenting the process of how the governance policies are developed and the procedure of policies update
+11. Review the data governance program regularly to meet the new requirement of new emerging data asset.
+
+## 5. Best practices for developing a successful data governance program
+
+### 5.1 Avoid data policing
+Because data governance typically imposes restrictions on how data is handled and used, and usually, it's the IT 
+and data management teams that lead data governance program. As a result, they'll be seen as the `data police` 
+by business users. 
+
+To avoid resistance of the business users to governance policies, we recommend that programs be business-driven, 
+with data owners involved and the data governance committee making the decisions on standards, policies and rules.
+
+### 5.2 Education is the key
+Training and education is the key of a successful data governance program. Particularly to familiarize business users 
+and data analysts with data usage rules, privacy mandates and their own responsibility for helping to keep data 
+sets consistent. 
+
+### 5.3 Commit to openness, awareness, communication and training
+Several of these practices build on a shared understanding of the data governance process across the organization. Data governance can't be effective if data users don't know about the program.
+
+- Be open about the program, its goals and its measures of success. Publish the governance strategy, describe the processes and share the metrics.
+- Awareness of the program should be part of all employee onboarding policies. If compliance training exists for subjects like harassment issues, work with those teams and HR to get data governance onto a similar track.
+- In all technical training related to data, such as the deployment of BI tools, include relevant elements of the governance strategy and how it pertains to the tools and platforms under review.
+- Training also needs to cover the importance of data quality, the policies associated with it and how to discover and reuse sanctioned data sources. Data analysts and report authors in particular shouldn't feel like they're being asked to trade agility for policy. Instead, they should see governed data as a resource that opens up possibilities for working confidently within the guidelines.
+- Implementing a "governance assured" stamp of approval can be added to dashboards, reports and other artifacts to show that the data has been governed properly.
+
+Communication with all data professionals and end users about the progress of the data governance program is also a 
+must, through a combination of reports, email newsletters, workshops and other outreach methods.
+
+### Review your data governance policy regularly
+An effective data governance program requires a continuous effort. New roles will emerge. Regulations will change. Determine what's needed to keep pace and adopt the necessary technologies and platforms.
+
+Repeatedly evaluate governance policies. An annual assessment makes sense at a minimum because a lot can change in one year. Other reviews will be ad hoc, for example, when a merger or acquisition brings new data, new people and new tools on board. Some sectors, such as financial services, may see frequent changes not only to data legislation, but also to rules concerning money laundering, sanctions, liquidity, credit and so on.
+
+A well-conceived and consistent review process can be an eye-opening exercise.
+
+### Don't take data privacy protections on trust
+Consumers worldwide are increasingly concerned about data privacy and, for good reason, they don't believe enterprises have their best interests at heart. A data governance program can improve customer confidence in the company's way of doing business.
+
+- Be straightforward about your company's privacy policies and give customers control over their information. We are all familiar now with websites that ask visitors to specify their cookie policy. Ask customers for permission to use their data for different purposes, such as demographics research, product improvements and market trends.
+- Put policies in place at every level of the enterprise that enforce preferences as rules. Some rules can be applied in code or technical procedures. For example, avoid extracting demographic data from a customer record and storing it in a data warehouse without the customer's permission. Other rules may be more like policies, such as "Don't use these customer records for product research."
+
+### Secure your data close to the source
+Security today is a specialized field. Threats are growing in sophistication. Protecting enterprise systems from external harm is a full-time job. Staying on top of access rules and permissions in a large, constantly changing business presents a real challenge.
+
+Collaboration is essential between the security and data governance teams. The governance team should ensure that policies about data access are applied as close to the source data as possible. Customer data, for example, can be created and maintained in a transactional system's database but analyzed and reported on from a data warehouse. The data is regularly extracted from the transactional system and loaded into the warehouse. If security and privacy rules are applied on the source system, unnecessary data is eliminated from the data warehouse and governance of the data in it is greatly simplified.
+
+Don't rely on client tools like business intelligence or data visualization platforms to apply security rules. By the time a BI user sees the data, it could have already passed through easily accessible, unsecured channels. Security for BI is a useful feature but should not be regarded as mission-critical.
+
+
+
+### Create a virtual compliance team with data practitioners
+Many of us work in highly regulated sectors, including public service, healthcare and finance. Even though compliance can't be guaranteed, it's important to achieve consistency and confidence. A virtual team can stay on top of compliance issues with a specific eye on data policy.
+
+The team should be comprised of data practitioners such as database architects, software developers and business analysts who work directly with the governance program's data sources but don't report to a more formal compliance department. The team should continuously reevaluate legislation that relates to the governance program, identify where to improve or add new coverage to the program's policies and monitor the program for incidents, issues and progress.
+
+Good governance policies clear the pathway to compliance without creating obstacles to business operations. Taking compliance seriously as part of a governance program helps take some of the burden and anxiety off other employees. A hospital's database administrator, for example, would have a heavy responsibility to keep the company's systems running and stay abreast of new healthcare data-handling legislation.
+
+
+
