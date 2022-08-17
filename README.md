@@ -24,6 +24,7 @@ governs data throughout their entire life-cycle. It defines mainly three things:
 
 Below figure shows a general representation of data governance and management
 
+![introduction_of_data_governance_terms.jpg](img/introduction_of_data_governance_terms.jpg)
 
 ### 1.1 Benefits
 As we mentioned before, the objective of data governance is to ensure the availability, usability, integrity and 
