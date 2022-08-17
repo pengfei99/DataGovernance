@@ -30,6 +30,7 @@ security of the data. A well-designed data governance system can provide below b
 - data quality guarantee
 - data security guarantee
 - data efficiency 
+- government regulation appliance (e.g. GDPR)
 
 
 #### 1.1.1 Data harmonization
