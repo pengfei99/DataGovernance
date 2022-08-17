@@ -22,6 +22,9 @@ governs data throughout their entire life-cycle. It defines mainly three things:
 
 **Data management is an entire suite of practices, processes,  systems and tools which implement the data governance definitions**. 
 
+Below figure shows a general representation of data governance and management
+
+
 ### 1.1 Benefits
 As we mentioned before, the objective of data governance is to ensure the availability, usability, integrity and 
 security of the data. A well-designed data governance system can provide below benefits:
