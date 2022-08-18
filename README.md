@@ -6,8 +6,12 @@ In this repo, I will list all the thing that I learned about the data governance
 ## 1. What is data governance?
 
 
-**Data governance is a collection of processes, roles, policies, standards, and metrics that ensure the availability, 
-usability, integrity and security of the data.** It makes the use of data consistent, trustworthy, effective and efficient. 
+**Data governance is a collection of processes, roles, policies, standards, and metrics** that ensure the 
+- availability, 
+- usability/interoperability,
+- security (i.e. confidentiality, integrity, privacy) of the data. 
+
+**It makes the use of data consistent, trustworthy, effective and efficient.** 
 
 **Data governance is a strategy, not technology**. It consists a set of decision-making process and rules which 
 governs data throughout their entire life-cycle. It defines mainly three things:
