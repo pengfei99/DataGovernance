@@ -172,3 +172,4 @@ The advantage of using an international metadata standard is that your metadata 
 The disadvantage is that it's not flexible enough to meet the requirements or data properties of the organization. So
 mang organization have their own standard.
 
+## 4. Metadata generation, storage, and sharing
