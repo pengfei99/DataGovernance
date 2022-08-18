@@ -18,9 +18,10 @@ The aspects varie a lot based on the data entity properties and business require
 8. Data access rules
 9. Data modification history
 
+
 ### 1.1 Objectives of the metadata
 
-The metadata has the following objectives:
+In general, the metadata can help us to achieve following objectives:
 
 1. Semantic enrichment (SE): also called semantic annotation or semantic profiling, 
             consists in generating a description of the context of data, e.g., with tags, to make 
@@ -54,7 +55,12 @@ The metadata has the following objectives:
                metadata system makes it possible to understand and explain possible inconsistencies in the data. 
                It can also be used to manage sensitive data, by detecting intrusions.
 
-## 2. Metadata standards
+## 2. Metadata classification
+
+They are many ways to classify metadata, Here I only highlight two popular classification that I think more suitable
+for a data management platform.
+
+For more information, you can read the [UNDERSTANDING METADATA WHAT IS METADATA, AND WHAT IS IT FOR? By Jenn Riley](https://www.niso.org/publications/understanding-metadata-2017)
 
 ### 2.1 NISO (National Information Standards Organization of the USA)
 
@@ -69,3 +75,25 @@ NISO distinguishes 3 types of metadata:
                    Two sub-types of administrative metadata are `rights management metadata` and `preservation metadata`. 
                    Rights management metadata explains intellectual property rights, while preservation metadata 
                    contains information to preserve and save a resource.
+
+### 2.2 MEDAL (University of lyon 2)
+
+MEDAL distinguishes 3 types of metadata:
+- Intra-object Metadata: are metadata that describes all properties of a data entity, in the form of key-value pairs. Including
+           not only basic file descriptions (e.g. file title, size, location, etc.), but also advance metadata such as 
+           access rights, semantic tags, content summery.
+- Inter-object Metadata: are metadata that describes all relationships between data entities. The inter-object relation can be any 
+                    relation, for example, it can be a
+                     - grouping relation: for example, all data from the same survey should be in the same group   
+                     - parenthood relation: if data entity A and B produce C and D, then A and B is the parent of C and D
+                     - similarity relation: if two reports of a topic give the same conclusion, we can use a similarity 
+                                            relation to link the two reports.
+- Global Metadata: are metadata designed to provide a contextual layer to the data entities, which can facilitate data
+                  discovery, interoperability. Unlike intra and inter metadata focus on concret data entities, 
+                  global metadata are defined by the knowledge bases of entire organization or beyond. For example, 
+                  the semantic resources such as ontologies, taxonomies, thesauri, dictionaries, etc.) are often used 
+                  to classify data entity.
+
+
+## 3. Standardizing Metadata
+Metadata is only useful if it is understandable to the software applications and people that use it. 
