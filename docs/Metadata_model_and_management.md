@@ -2,6 +2,13 @@
 
 ## 1. What is metadata?
 
+### ISO definition
+
+In ISO/IEC 11179, the metadata (information objects) are data about Data Elements, Value Domains, and other reusable 
+semantic and representational information objects that describe the meaning and technical details of a data item
+
+### My definition 
+
 **Metadata** is `structured information` that describes one or more aspects of a data entity. 
 In general, Metadata is used to summarize basic information about data which can make `finding, tracking, using,
 and managing` data easier. 
@@ -96,4 +103,72 @@ MEDAL distinguishes 3 types of metadata:
 
 
 ## 3. Standardizing Metadata
-Metadata is only useful if it is understandable to the software applications and people that use it. 
+
+**Metadata is only useful if it is understandable to the software applications and people that use it**. We also 
+mentioned before, metadata are structured data. To make metadata understandable, organizations frequently predefine 
+metadata schemas(standard) to meet certain requirements, and publish these schemas for all data professionals 
+(and sometimes end users) to consult.
+
+I divide the metadata standardisation into two categories:
+- the international standard
+- the organization standard
+
+### 3.1 The international standard
+
+#### 3.1.1 Metadata (ISO/IEC 11179)
+Much work is being accomplished in the national and international standards communities, especially ANSI 
+(American National Standards Institute) and ISO (International Organization for Standardization) to reach a consensus 
+on standardizing metadata and registries, which is **ISO/IEC 11179**.
+
+This standard specifies a schema for recording both the meaning and technical structure of the data for unambiguous 
+usage by humans and computers. 
+
+#### 3.1.2 Geospatial metadata (ISO 19115)
+
+**Geospatial metadata** (also geographic metadata) is a type of metadata applicable to geographic data and information. 
+
+ISO 19115 is a standard to provide a clear procedure for the description of digital geographic data-sets so that 
+users will be able to determine whether the data in a holding will be of use to them and how to access the data. 
+By establishing a common set of metadata terminology, definitions and extension procedures, this standard promotes 
+the proper use and effective retrieval of geographic data.
+
+For more information, please read this [page](https://en.wikipedia.org/wiki/Geospatial_metadata)
+
+#### 3.1.3 Dublin Core metadata terms ( ISO 15836)
+The Dublin Core metadata terms are a set of vocabulary terms that can be used to describe resources for the purposes 
+of discovery.
+
+The original DCMES Version 1.1 consists of 15 metadata elements, defined this way in the original specification:
+
+1. Contributor – "An entity responsible for making contributions to the resource". 
+2. Coverage – "The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant". 
+3. Creator – "An entity primarily responsible for making the resource". 
+4. Date – "A point or period of time associated with an event in the lifecycle of the resource". 
+5. Description – "An account of the resource". 
+6. Format – "The file format, physical medium, or dimensions of the resource". 
+7. Identifier – "An unambiguous reference to the resource within a given context". 
+8. Language – "A language of the resource". 
+9. Publisher – "An entity responsible for making the resource available". 
+10. Relation – "A related resource". 
+11. Rights – "Information about rights held in and over the resource". 
+12. Source – "A related resource from which the described resource is derived". 
+13. Subject – "The topic of the resource". 
+14. Title – "A name given to the resource". 
+15. Type – "The nature or genre of the resource".
+
+#### 3.1.4 W3C Data Catalog Vocabulary (DCAT)
+
+The W3C Data Catalog Vocabulary (DCAT) is an RDF vocabulary that supplements Dublin Core with classes for Dataset, 
+Data Service, Catalog, and Catalog Record.
+
+For more information, please read this [page](https://www.w3.org/TR/vocab-dcat/)
+
+### 3.2 The organization standard
+
+As you can see, the metadata schema depends on the properties of data entities and the requirements of the organization. That's why geospatial data have their
+own metadata standard. 
+
+The advantage of using an international metadata standard is that your metadata have international interoperability.
+The disadvantage is that it's not flexible enough to meet the requirements or data properties of the organization. So
+mang organization have their own standard.
+
