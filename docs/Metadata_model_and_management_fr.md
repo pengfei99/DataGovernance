@@ -2,8 +2,7 @@
 
 ## 1. What is metadata?
 
-Les métadonnées sont des informations structurées qui décrivent,
-expliquent, localisent ou encore facilitent ou permettent la
+Les métadonnées sont des informations structurées qui décrivent, localisent ou encore facilitent la
 recherche, l’utilisation ou la gestion d’une ressource d’information
 
 
