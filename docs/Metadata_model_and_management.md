@@ -101,6 +101,31 @@ MEDAL distinguishes 3 types of metadata:
                   the semantic resources such as ontologies, taxonomies, thesauri, dictionaries, etc.) are often used 
                   to classify data entity.
 
+### 2.3 NISO more detailed classification
+
+NISO also propose a more detailed classification which divide administrative metadata into three subclasses:
+
+- Technical metadata
+- Preservation metadata
+- Rights metadata
+
+Below shows some example and their primary uses.
+
+| Metadata Type                     | Example Properties                                | Primary Uses                                             |
+|-----------------------------------|---------------------------------------------------|----------------------------------------------------------|
+| Descriptive metadata              | Title, Author, Subject, Genre, Publication date   | Discovery, Display, Interoperability                     |
+| Technical metadata File type (ad) | File size, Creation date/time, Compression scheme | Interoperability, Digital object management,Preservation |
+| Preservation metadata (ad)        | Checksum, Preservation event                      | Interoperability,Digital object management, Preservation |
+| Rights metadata  (ad)             | Copyright status, License terms, Rights holder    | Interoperability, Digital object management              |
+| Structural metadata               | Sequence, Place in hierarchy                      | Navigation                                               |
+| Markup languages                  | Paragraph, Heading, List, Name, Date              | Navigation, Interoperability                             |
+
+
+Note, the markup languages mix metadata and content (actual data) together, a practice only sometimes used with 
+other forms of metadata. Flags inserted in the content denote notable features. For example, HTML is a markup, it
+contains structural flags such as paragraphs; flagging words with semantic information—that the word is a place 
+name or a certain part of speech; or providing formatting information, such as italics.
+
 
 ## 3. Standardizing Metadata
 
@@ -172,4 +197,9 @@ The advantage of using an international metadata standard is that your metadata 
 The disadvantage is that it's not flexible enough to meet the requirements or data properties of the organization. So
 mang organization have their own standard.
 
-## 4. Metadata generation, storage, and sharing
+## 4. Metadata generation, 
+
+### 4.1 Metadd
+
+
+## 5. Metadata storage, and sharing
