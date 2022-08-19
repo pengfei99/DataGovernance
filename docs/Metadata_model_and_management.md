@@ -197,9 +197,71 @@ The advantage of using an international metadata standard is that your metadata 
 The disadvantage is that it's not flexible enough to meet the requirements or data properties of the organization. So
 mang organization have their own standard.
 
-## 4. Metadata generation, 
+## 4. Metadata creation, 
 
-### 4.1 Metadd
+### 4.1 Metadata created by Human
 
+In traditions, metadata has primarily been created by human. Because there is no other way to create metadata. 
+For example, in cultural sector, to assist users with finding printed books, journals, or manuscripts, A human must 
+transcribe descriptive metadata such as title, author, and publication date by examining a physical item. 
+
+For advance metadata such as book summaries, book category, or author background, we may even need an expert of the domain
+who would do targeted research and then record the results. 
+
+Even though with the digitization, you can use a purpose-built metadata entry systems (e.g. web app) to enter this 
+metadata, but we still need a human to key in these data.
+
+### 4.2 Metadata created by software
+
+Technological advances have also demonstrated reliable methods for creating metadata through 
+automated processes. `Technical metadata` in particular is an example of this. 
+
+Most file formats(e.g. pdf, excel, etc.) include at least some embedded technical information designed to assist software with 
+interpreting the content. File system can also provide some system-level information to add extra administrative 
+information to files, such as date created or the ID of the user logged into the system at the time the file 
+was generated.
+
+Some machine learning technic are also used to classify text files, but it's still far from the human level accuracy.
 
 ## 5. Metadata storage, and sharing
+
+Once we created the metadata, we need to store them and share them, so other user and software can use this metadata.
+In general, we need to create a **metadata repository** which centralize all metadata and their related definition
+(e.g. glossary, schema, etc.).
+
+This metadata repository often provides Application Programming Interfaces (APIs) and specification documents that 
+allows external software and users to `retrieve, create, modify, and delete` metadata.
+
+### 5.1 Metadata repository implementation
+
+There are two major categories of metadata repository implementation:
+- database (e.g. relational, graph, key-value)
+- file based (e.g. xml,csv,parquet,etc)
+
+
+#### Database 
+
+As we explained before, the metadata is `structured data`, so it's natual to use relational database to implement the
+metadata repository. Each metadata attribute can be stored as `fields/columns` in relational database tables. 
+
+Some implementation uses graph based database to maximize query performance for data lineage.
+
+Maturity and flexibility of databases makes it as number one choice for intra-organization metadata repository.
+
+Even though, implement a metadata repository with a database has many advantage, but it's hard to maintain, and you will
+face security issues if you need to expose the repository for public access. 
+
+#### File-based
+
+In a file-based metadata repository, you just store all metadata inside a file, the file format can be structured, 
+semi-structured, or even non-structured. 
+
+The advantage is that it's easy to maintain, and no security issues for public access. Because people only download
+a copy of the file.
+
+The disadvantage is that it's hard to exploit for other software (for semi-structured, or even non-structured file).
+
+## 6. Usage and tooling
+
+metadata management
+business glossaries, data cataloging, data lineage
