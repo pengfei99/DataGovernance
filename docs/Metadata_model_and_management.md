@@ -319,3 +319,36 @@ Provides granular governance and access control
 Built on open API architecture
 
 ### 6.2 data lineage
+
+Data lineage is a map of the data journey, which includes its origin, each stop along the way, and an explanation 
+on how and why the data has moved over time. The data lineage can be documented visually from source to eventual 
+destination — noting stops, deviations, or changes along the way. The process simplifies tracking for operational 
+aspects like day-to-day use and error resolution.
+
+Data lineage tools help you track your data's changes at every step. Data, as captured from the source, isn't of 
+much use until it goes through a series of data engineering processes like cleaning, wrangling, integration, 
+remodeling, etc. To get the most value from your data, you need to keep track of its origins and lifecycle.
+
+Here are five popular open-source data lineage tools
+1. Tokern 
+2. Egeria 
+3. Pachyderm 
+4. OpenLineage 
+5. TrueDat
+
+Data lineage is paramount to understanding your data's ownership, origins, quality, and journey. Choosing 
+a tool that provides you with the level of detail, flexibility, and scalability that you want is an arduous task.
+
+If you have an existing data setup, you will have to choose a tool that works with the data sources, orchestration 
+tools, ETL tools, and query engines you have in place, and opt for the tool that works well for you.
+
+### 6.3 business glossary repository
+
+A business glossary is a list of business terms and their definitions that organizations use to ensure the same 
+definitions are used company-wide when analyzing data. A business glossary produces a common business vocabulary, 
+used by everyone in an organization. A unified, common language is a key component of data governance.
+
+A business glossary repository is a centralized repository that stores and organize all business glossary of the 
+organization.
+
+https://www.insee.fr/fr/metadonnees/cpfr21/section/A?champRecherche=true
