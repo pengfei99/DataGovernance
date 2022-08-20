@@ -62,7 +62,33 @@ In general, the metadata can help us to achieve following objectives:
                metadata system makes it possible to understand and explain possible inconsistencies in the data. 
                It can also be used to manage sensitive data, by detecting intrusions.
 
-## 2. Metadata classification
+
+It should answer the following questions:
+- What is the data asset about? 
+    - Descriptions (tables, columns)
+    - Keywords or tags
+    - Themes or categories
+- Why does the data asset exist?
+    - Data source
+    - Lineage
+    - Impact analysis
+- Where is the data asset from?
+    - Spatial coverage
+    - Language
+    - Business domains
+- Who is responsible for the data asset?
+    - Creator or owner
+    - Contributors or experts
+    - Point of contact
+- When was the data asset created and updated?
+    - Creation date
+    - Last updated or modified date
+    - Update frequency
+- How can the data asset be used?
+    - License
+    - Classification
+    - Use cases
+## 2. Metadata classification/model
 
 They are many ways to classify metadata, Here I only highlight two popular classification that I think more suitable
 for a data management platform.
@@ -261,7 +287,35 @@ a copy of the file.
 
 The disadvantage is that it's hard to exploit for other software (for semi-structured, or even non-structured file).
 
-## 6. Usage and tooling
+## 6. Metadata management platform
 
-metadata management
-business glossaries, data cataloging, data lineage
+Metadata management platform implements the metadata policies that are defined by the data governance which includes:
+- metadata model (e.g. schema, business glossaries) implementation
+- tools that enable metadata visualisation, creation, modification, deletion, and indexing the metadata
+- search engine
+
+A metadata management platform should enable diverse data users to surface relevant metadata when and where they need it.
+It may contain one or more tools that enable following functionalities :
+- Metadata discovery/creation/ingestion (e.g  business glossaries)
+- Metadata repository (a catalog, inventory, or dictionary)
+- Metadata lineage
+- Metadata automation and intelligence (e.g. automate classification, key word extraction)
+- Metadata sharing and federation (equitable metadata access and data democratization across the diverse organizations)
+
+
+### 6.1 data catalog
+
+A data catalog is a tool that organize all the data assets via metadata of an organization which allows all data professionals to 
+- discover/search data
+- understand the context of data (e.g. quality, profile, etc.)
+- enrich data context
+
+5 must-have features of a modern data catalog:
+
+- can handle heterogeneous metadata
+- Organizes and consolidates metadata in a single repository
+- Enables embedded collaboration (be able to adapt skill-sets, and workflows of all data professionals (de, ds,da))
+Provides granular governance and access control
+Built on open API architecture
+
+### 6.2 data lineage
