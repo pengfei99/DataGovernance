@@ -176,7 +176,7 @@ five principle decision domains:
 
 Below figures shows a graphical presentation of the above definitions
 
-![introduction_of_data_governance_terms](https://raw.githubusercontent.com/pengfei99/DataGovernance/main/img/introduction_of_data_governance_terms.png)
+![introduction_of_data_governance_terms](img/introduction_of_data_governance_terms.png)
 
 
 
