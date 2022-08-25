@@ -289,10 +289,11 @@ The disadvantage is that it's hard to exploit for other software (for semi-struc
 
 ## 6. Metadata management platform
 
-Metadata management platform implements the metadata policies that are defined by the data governance which includes:
-- metadata model (e.g. schema, business glossaries) implementation
-- tools that enable metadata visualisation, creation, modification, deletion, and data indexing
-- search engine
+Metadata management platform implementsthe the data governance specification which includes:
+- Metadata model (e.g. schema, business glossaries) implementation
+- Metadata visualization, creation, modification, deletion, and data indexing 
+- Metadata search engine 
+- Metadata access, sharing policies enforcement 
 
 A metadata management platform should enable diverse data users to surface relevant metadata when and where they need it.
 It may contain one or more tools that enable following functionalities :
