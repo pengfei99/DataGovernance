@@ -172,7 +172,7 @@ five principle decision domains:
   
 - **Data security**: Ensure the data confidentiality, integrity, and availability. 
   
-- **Data life cycle**: Ensure the data life cycle conforms with the data governance policy. 
+- **Data life cycle**: Defines the data life cycle and ensure the data life cycle in the organization conforms with the data governance policy . 
 
 Below figures shows a graphical presentation of the above definitions
 
