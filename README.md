@@ -187,7 +187,7 @@ Below figures shows a graphical presentation of the above definitions
 [Data quality](https://github.com/pengfei99/DataGovernance/blob/main/docs/data_quality.md)
 
 ### 2.3 Metadata management definition and implementation
-
+[Metadata and metadata management](https://github.com/pengfei99/DataGovernance/blob/main/docs/Metadata_model_and_management.md)
 ### 2.4 Data security definition and implementation
 
 ### 2.5 Data life cycle definition and implementation
