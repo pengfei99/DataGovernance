@@ -165,14 +165,16 @@ five principle decision domains:
   define their responsibility. For instance, business users need to help provide information about data quality as well as its 
   lifecycle, interpretability and access. Based on this information, data professionals implement data quality control,
   access control, etc. 
-    
-- **Data Quality**: Use the metrics defined by the data governance to evaluate the data quality. 
   
-- **Metadata management**: Use metadata to ensure that the data discoverability, usability, traceability, auditability, etc. 
+- **Data life cycle**: Defines the data life cycle and ensure the data life cycle in the organization conforms with the data governance policy.
+ 
+- **Data Quality**: Defines the rules and metrics that evaluate the data quality.
   
-- **Data security**: Ensure the data confidentiality, integrity, and availability. 
+- **Metadata management**: Defines the metadata model and specification to ensure the data discoverability, usability, traceability, etc. 
   
-- **Data life cycle**: Defines the data life cycle and ensure the data life cycle in the organization conforms with the data governance policy . 
+- **Data security**: Defines security policies to ensure the data confidentiality, integrity, and availability.
+  
+
 
 Below figures shows a graphical presentation of the above definitions
 
