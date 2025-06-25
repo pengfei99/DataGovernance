@@ -24,6 +24,17 @@ DCAT has the below classes:
 
 
 ## A simple API catalog example in turtle
+In the below example, you can find the below elements:
+
+|Element|	Meaning|
+|-------|----------|
+|dcat:Catalog|	Represents the full API catalog|
+|dcat:Dataset|	Each API is modeled as a dataset|
+|dcat:Distribution|	Represents an implementation (REST endpoint, version)|
+|dcat:accessURL|	URL to the actual API endpoint|
+|dct:format|	MIME type of the API response format|
+|dct:conformsTo|	Link to OpenAPI or other specifications|
+|dct:license|	Usage constraints for internal APIs|
 
 ```text
 
