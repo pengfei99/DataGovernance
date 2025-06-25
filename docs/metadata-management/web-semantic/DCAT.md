@@ -138,3 +138,55 @@ In the below example, you can find the below elements:
 }
 
 ```
+
+## Usage
+
+A typical example of RDF-DCAT on a website is embedding structured metadata using `JSON-LD` inside an HTML page, 
+especially for SEO, linked data, or open data catalogs. This is commonly used with schema.org, DCAT, Dublin Core, 
+or custom vocabularies.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>COVID-19 Statistics Dataset</title>
+  <script type="application/ld+json">
+  {
+    "@context": {
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "dct": "http://purl.org/dc/terms/",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "xsd": "http://www.w3.org/2001/XMLSchema#"
+    },
+    "@id": "https://data.example.org/dataset/covid19",
+    "@type": "dcat:Dataset",
+    "dct:title": "COVID-19 Statistics by Region",
+    "dct:description": "Daily updated statistics of COVID-19 cases by region.",
+    "dct:publisher": {
+      "@type": "foaf:Agent",
+      "foaf:name": "Ministry of Health"
+    },
+    "dcat:distribution": {
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": {
+        "@id": "https://data.example.org/files/covid19.csv"
+      },
+      "dct:format": "text/csv"
+    }
+  }
+  </script>
+</head>
+<body>
+  <h1>COVID-19 Statistics Dataset</h1>
+  <p>This dataset contains daily statistics of COVID-19 cases.</p>
+  <a href="https://data.example.org/files/covid19.csv">Download CSV</a>
+</body>
+</html>
+
+```
+
+In the above RDF-DCAT spec, we have the below section:
+- **@context:** Declares vocabularies: DCAT, DCTERMS, FOAF
+- **@type: dcat:Dataset**:	Declares the resource is a dataset
+- **dcat:distribution**:	Describes how to access the dataset (format + URL)
+- **foaf:Agent**:	Identifies the publisher or data provider
