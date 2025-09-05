@@ -28,7 +28,7 @@ The aspects varie a lot based on the data entity properties and business require
 
 ### 1.1 Objectives of the metadata
 
-In general, the metadata can help us to achieve following objectives:
+In general, the metadata can help us to achieve the following objectives:
 
 1. Semantic enrichment (SE): also called semantic annotation or semantic profiling, 
             consists in generating a description of the context of data, e.g., with tags, to make 
@@ -37,7 +37,7 @@ In general, the metadata can help us to achieve following objectives:
             in the lake so that they are more understandable to the user. It can also be used as a basis 
             for identifying data links. For instance, data associated with the same tags can be considered linked.
 
-2. Data indexing (DI): consists in setting up a data structure to retrieve datasets based on specific 
+2. Data indexing (DI): consists of setting up a data structure to retrieve datasets based on specific 
                   characteristics (keywords or patterns). This requires the construction of forward or 
                    inverted indexes. Indexing makes it possible to optimize data querying in the lake through 
                    keyword filtering. It is particularly useful for textual data management, but can also be used 
@@ -52,7 +52,7 @@ In general, the metadata can help us to achieve following objectives:
                 a textual document can be represented without stopwords or as a bag of words. It is essential in 
                 the context of data lakes to at least partially structure unstructured data to allow their
                 automated analysis. Simultaneously storing several representations of the same data notably 
-                avoids repeating preprocessings and thus speeds up analyses.
+                avoids repeating preprocessing and thus speeds up analyses.
 5. Data versioning (DV): refers to the ability of the metadata system to support data changes while conserving 
                previous states. This ability is essential in data lakes, as it ensures the reproducibility of 
                analyses and supports the detection and correction of possible errors or inconsistencies. 
@@ -101,7 +101,7 @@ NISO distinguishes 3 types of metadata:
 - descriptive: Descriptive metadata is typically used for discovery and identification, as information to 
                search and locate an object, such as title, authors, subjects, keywords, and publisher.
 - structural: Structural metadata describes how the components of an object are organized. An example of structural 
-              metadata would be how a database organize tables inside it (e.g. schema of each table and relation between
+              metadata would be how a database organizes tables inside it (e.g. schema of each table and relation between
               tables).
 - administrative: Administrative metadata gives information to help manage the source. Administrative metadata refers 
                    to the technical information, such as file type, or when and how the file was created. 
@@ -121,9 +121,9 @@ MEDAL distinguishes 3 types of metadata:
                      - parenthood relation: if data entity A and B produce C and D, then A and B is the parent of C and D
                      - similarity relation: if two reports of a topic give the same conclusion, we can use a similarity 
                                             relation to link the two reports.
-- Global Metadata: are metadata designed to provide a contextual layer to the data entities, which can facilitate data
-                  discovery, interoperability. Unlike intra and inter metadata focus on concret data entities, 
-                  global metadata are defined by the knowledge bases of entire organization or beyond. For example, 
+- Global Metadata: metadata designed to provide a contextual layer to the data entities, which can facilitate data
+                  discovery, interoperability. Unlike intra and inter metadata focus on concrete data entities, 
+                  global metadata is defined by the knowledge bases of the entire organization or beyond. For example, 
                   the semantic resources such as ontologies, taxonomies, thesauri, dictionaries, etc.) are often used 
                   to classify data entity.
 
@@ -135,7 +135,7 @@ NISO also propose a more detailed classification which divide administrative met
 - Preservation metadata
 - Rights metadata
 
-Below shows some example and their primary uses.
+Below shows some examples and their primary uses.
 
 | Metadata Type                     | Example Properties                                | Primary Uses                                             |
 |-----------------------------------|---------------------------------------------------|----------------------------------------------------------|
@@ -156,7 +156,7 @@ name or a certain part of speech; or providing formatting information, such as i
 ## 3. Standardizing Metadata
 
 **Metadata is only useful if it is understandable to the software applications and people that use it**. We also 
-mentioned before, metadata are structured data. To make metadata understandable, organizations frequently predefine 
+mentioned before, metadata is structured data. To make metadata understandable, organizations frequently predefine 
 metadata schemas(standard) to meet certain requirements, and publish these schemas for all data professionals 
 (and sometimes end users) to consult.
 
@@ -221,14 +221,14 @@ own metadata standard.
 
 The advantage of using an international metadata standard is that your metadata have international interoperability.
 The disadvantage is that it's not flexible enough to meet the requirements or data properties of the organization. So
-mang organization have their own standard.
+ many organizations have their own standard.
 
 ## 4. Metadata creation, 
 
 ### 4.1 Metadata created by Human
 
-In traditions, metadata has primarily been created by human. Because there is no other way to create metadata. 
-For example, in cultural sector, to assist users with finding printed books, journals, or manuscripts, A human must 
+In traditions, metadata has primarily been created by humans. Because there is no other way to create metadata. 
+For example, in the cultural sector, to assist users with finding printed books, journals, or manuscripts, A human must 
 transcribe descriptive metadata such as title, author, and publication date by examining a physical item. 
 
 For advance metadata such as book summaries, book category, or author background, we may even need an expert of the domain
@@ -251,8 +251,8 @@ Some machine learning technic are also used to classify text files, but it's sti
 
 ## 5. Metadata storage, and sharing
 
-Once we created the metadata, we need to store them and share them, so other user and software can use this metadata.
-In general, we need to create a **metadata repository** which centralize all metadata and their related definition
+Once we create the metadata, we need to store them and share them, so other users and software can use this metadata.
+In general, we need to create a **metadata repository** which centralizes all metadata and their related definition
 (e.g. glossary, schema, etc.).
 
 This metadata repository often provides Application Programming Interfaces (APIs) and specification documents that 
@@ -274,7 +274,7 @@ Some implementation uses graph based database to maximize query performance for 
 
 Maturity and flexibility of databases makes it as number one choice for intra-organization metadata repository.
 
-Even though, implement a metadata repository with a database has many advantage, but it's hard to maintain, and you will
+Even though, implementing a metadata repository with a database has many advantages, but it's hard to maintain, and you will
 face security issues if you need to expose the repository for public access. 
 
 #### File-based
@@ -289,14 +289,14 @@ The disadvantage is that it's hard to exploit for other software (for semi-struc
 
 ## 6. Metadata management platform
 
-Metadata management platform implementsthe the data governance specification which includes:
+Metadata management platform implements the data governance specification which includes:
 - Metadata model (e.g. schema, business glossaries) implementation
 - Metadata visualization, creation, modification, deletion, and data indexing 
 - Metadata search engine 
 - Metadata access, sharing policies enforcement 
 
 A metadata management platform should enable diverse data users to surface relevant metadata when and where they need it.
-It may contain one or more tools that enable following functionalities :
+It may contain one or more tools that enable the following functionalities :
 - Metadata discovery/creation/ingestion (e.g  business glossaries)
 - Metadata repository (a catalog, inventory, or dictionary)
 - Metadata lineage
@@ -306,7 +306,7 @@ It may contain one or more tools that enable following functionalities :
 
 ### 6.1 data catalog
 
-A data catalog is a tool that organize all the data assets via metadata of an organization which allows all data professionals to 
+A data catalog is a tool that organizes all the data assets via metadata of an organization which allows all data professionals to 
 - discover/search data
 - understand the context of data (e.g. quality, profile, etc.)
 - enrich data context
