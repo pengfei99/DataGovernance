@@ -1,12 +1,12 @@
 # DataGovernance and all that
 
 Data become more and more important for an organization. But how to govern and manage them is still quit challenging. 
-In this repo, I will list all the thing that I learned about the data governance and management. 
+In this repo, I will list all the things that I learned about data governance and management. 
 
 ## 1. What is data governance?
 
 
-**Data governance is a collection of processes, roles, policies, standards, and metrics** that ensure the 
+**Data governance** is a collection of `processes, roles, policies, standards, and metrics` that ensure the 
 - availability, 
 - usability/interoperability,
 - security (i.e. confidentiality, integrity, privacy) of the data. 
@@ -160,7 +160,7 @@ the requirement of new emerging data asset.
 
 In the previous section, we have said we need to make decisions to ensure effective management of data. In general, we have
 five principle decision domains:
-- **Data Principles**: defines behaviors of all stakeholders of a dataset and establish the link between them. For
+- **Data Principles**: `defines behaviors of all stakeholders of a dataset and establish the link between them`. For
   example, for a dataset, we define and assign role such as business owners and data professionals to people. We also 
   define their responsibility. For instance, business users need to help provide information about data quality as well as its 
   lifecycle, interpretability, and access. Based on this information, data professionals implement data quality control,
@@ -184,15 +184,58 @@ Below figures show a graphical presentation of the above definitions
 
 ### 2.1 Data principals definition and implementation
 
-### 2.2 Data quality definition and implementation
+Data principals are the core guiding rules or roles that govern how data should be handled. They include:
 
-[Data quality](https://github.com/pengfei99/DataGovernance/blob/main/docs/data_quality.md)
+- **Ownership**: Who is accountable for the data.
+- **Accountability & stewardship**: Who maintains and ensures data quality and compliance.
+- **Transparency**: Making sure data practices are visible and understandable.
+- **Ethics & compliance**: Using data responsibly and in line with legal requirements (e.g., GDPR).
+
+Essentially, data principals define the who and why of data management.
+
+### 2.2 Data quality definition and implementation
+**Data quality** measures how `fit` data is for its `intended use`. Key dimensions include:
+- Accuracy: Is the data correct?
+- Completeness: Are all required values present?
+- Consistency: Does it align across systems?
+- Timeliness: Is it up to date?
+- Validity: Does it follow defined formats and rules?
+> High-quality data is essential for reliable decision-making and compliance.
+
+For more details, you can read this doc[Data quality](./docs/data_quality.md)
 
 ### 2.3 Metadata management definition and implementation
-[Metadata and metadata management](./docs/metadata-management/Metadata_model_and_management.md)
+
+Metadata is `data about data.` For example:
+- In a database, a column definition (Customer_Age INT) is metadata.
+- In files, creation date and format are metadata.
+
+Managing metadata involves:
+- **Cataloging**: Building searchable inventories of data assets.
+- **Lineage tracking**: Understanding where data came from and how it changed.
+- **Business definitions**: Standardizing terms so “customer” means the same everywhere.
+- **Technical metadata**: Schemas, formats, transformations.
+
+For more details, you can read this doc [Metadata and metadata management](./docs/metadata-management/Metadata_model_and_management.md)
+
 ### 2.4 Data security definition and implementation
+**Data security** protects data against `unauthorized access, corruption, or loss`. It covers:
+
+ - **Access control**: Ensuring only authorized users can access data. 
+ - **Encryption**: Protecting data at rest and in transit.
+ - **Data masking/anonymization**: Safeguarding sensitive information.
+ - **Monitoring & auditing**: Detecting breaches or misuse.
+ - **Compliance alignment**: Meeting standards (ISO 27001, GDPR, HIPAA).
 
 ### 2.5 Data life cycle definition and implementation
+**Data life cycle** describes the stages data goes through from creation to deletion. Typical phases:
+
+- **Creation & Capture**: Generating or collecting data.
+- **Storage & Maintenance**: Organizing and storing data securely.
+- **Usage**: Making data available for business processes, analytics, and decision-making.
+- **Sharing & Distribution**: Exchanging data across systems or organizations.
+- **Archiving**: Moving less-used but valuable data into long-term storage.
+- **Disposal**: Securely deleting data when no longer needed.
 
 ## 3. Difference between data governance and data management
 
